@@ -1,0 +1,5 @@
+body {
+    background-image: url(./images/background.jpg);
+    z-index: 1;
+    background-attachment: fixed;
+  }
