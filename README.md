@@ -8,5 +8,10 @@
 - cd movies-app
 -  npm install
 
-### RUN THE PROJECCT 
+### RUN THE PROJECT
  -  npm run dev 
+ -  npm run build
+
+### Project Demo
+   
+   - [link](https://harmonious-cascaron-58ceee.netlify.app/)
