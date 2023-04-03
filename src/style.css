@@ -28,6 +28,25 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.main-about{
+  margin-top: 15%;
+  text-align: center;
+  color: white;
+}
+
+.main-about h1{
+  background-color: aquamarine;
+  color: white;
+  width: 70%;
+  margin: auto;
+  padding: 50px 70px;
+}
+
+.main-about p {
+  width: 80%;
+  margin: auto;
+}
+
 .logo {
   width: 8%;
 }

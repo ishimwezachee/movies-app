@@ -67,8 +67,12 @@
   align-self: center;
   border: none;
   border-radius: 16px;
+  cursor: pointer;
 }
 
+.reservation{
+  display: none;
+}
 @media screen  and (max-width: 480px){
   .container{
         grid-template-columns: 100%;

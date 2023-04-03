@@ -1,23 +1,26 @@
 import universalCount from './count.js';
 
 const count = universalCount();
+
 const commentCount = () => {
-  const loop = 1;
-  for (let i = 0; i < count; i += loop) {
-    document.addEventListener('click', async (e) => {
-      if (e.target.id === `${i}`) {
+  const commentsContainer = document.getElementById('comments');
+  const numberContainer = document.getElementById('number');
+
+  document.addEventListener('click', async (e) => {
+    const clickedElementId = e.target.id;
+
+    if (clickedElementId !== undefined) {
+      const idNumber = parseInt(clickedElementId, 10);
+      if (idNumber >= 0 && idNumber < count) {
         setTimeout(() => {
-          const comments = document.getElementById('comments');
-          const number = document.getElementById('number');
-          if (comments.children.length > 0) {
-            number.innerHTML = `Comments (${comments.children.length})`;
-          } else {
-            number.innerHTML = 'Comments (0)';
-          }
+          const commentsCount = commentsContainer.children.length;
+          const commentsText = commentsCount === 1 ? 'Comment' : 'Comments';
+          const numberText = `${commentsText} (${commentsCount})`;
+          numberContainer.innerHTML = numberText;
         }, 2000);
       }
-    });
-  }
+    }
+  });
 };
 
 commentCount();

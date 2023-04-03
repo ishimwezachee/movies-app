@@ -15,6 +15,7 @@ countMovies();
 
 const renderMovies = async () => {
   const data = await getMovie();
+  console.log(data.length)
   const cut = data.slice(0, count);
   const container = document.querySelector('.container');
 

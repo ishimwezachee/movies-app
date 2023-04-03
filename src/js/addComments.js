@@ -3,7 +3,7 @@ import universalCount from './numbering';
 
 const count = universalCount();
 
-const postComment = () => {
+const createText = () => {
   const loop = 1;
 
   for (let i = 0; i < count; i += loop) {
@@ -21,9 +21,9 @@ const postComment = () => {
   }
 };
 
-postComment();
+createText();
 
-const retreiveComments = () => {
+const getTexts = () => {
   const loop = 1;
   for (let i = 0; i < count; i += loop) {
     document.addEventListener('click', (e) => {
@@ -43,4 +43,4 @@ const retreiveComments = () => {
   }
 };
 
-retreiveComments();
+getTexts();

@@ -60,6 +60,12 @@ h2 {
   margin: 10px 25%;
 }
 
+.metamovies{
+  background-color: rgb(177, 164, 164);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .synopsis > * {
   text-align: center;
   font-size: 0.7rem;
@@ -119,15 +125,20 @@ h2 {
 }
 
 .text-area {
-  height: 300px;
+  height: 150px;
   border: none;
   border-radius: 16px;
   text-indent: 10px;
+  font-size: 15px;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+.comments{
+  cursor: pointer;
 }
 
 .comments > p {
