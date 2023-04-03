@@ -1,4 +1,4 @@
-import universalCount from './count.js';
+import universalCount from './numbering';
 
 const count = universalCount();
 
